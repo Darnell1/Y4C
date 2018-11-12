@@ -1,0 +1,18 @@
+﻿@model Y4C.Models.AddContent
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Content</title>
+</head>
+<body>
+    <form asp-controller="Home" asp-action="AddContent" asp-method="Post">
+        <label>Title</label> <input type="text" name="Title" /><br />
+        <label>Video</label> <input type="text" name="Video" /><br />
+        <label>Description</label> <input type="text" name="Description" /><br />
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+
+</html>
+
