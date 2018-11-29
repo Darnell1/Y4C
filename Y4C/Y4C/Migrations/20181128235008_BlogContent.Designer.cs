@@ -11,8 +11,8 @@ using Y4C.Models;
 namespace Y4C.Migrations
 {
     [DbContext(typeof(AddContentDBContext))]
-    [Migration("20181102161135_Id")]
-    partial class Id
+    [Migration("20181128235008_BlogContent")]
+    partial class BlogContent
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -25,6 +25,12 @@ namespace Y4C.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
+
+                    b.Property<string>("BlogAuthor");
+
+                    b.Property<string>("BlogContent");
+
+                    b.Property<string>("BlogTitle");
 
                     b.Property<string>("Description");
 
