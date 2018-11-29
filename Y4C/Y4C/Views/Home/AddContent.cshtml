@@ -1,18 +1,33 @@
 ﻿@model Y4C.Models.AddContent
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Add Content</title>
-</head>
-<body>
-    <form asp-controller="Home" asp-action="AddContent" asp-method="Post">
-        <label>Title</label> <input type="text" name="Title" /><br />
-        <label>Video</label> <input type="text" name="Video" /><br />
-        <label>Description</label> <input type="text" name="Description" /><br />
-        <input type="submit" value="Submit" />
-    </form>
-</body>
 
-</html>
+@{
+    ViewData["Title"] = "AddContent";
+}
+
+<h2>Upload Content Page</h2>
+
+<hr/>
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-controller="Home" asp-action="AddContent" asp-method="Post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label>Title</label> <input type="text" name="Title" /><br />
+            </div>
+            <div class="form-group">
+                <label>Video Url</label> <input type="text" name="Video" /><br />
+            </div>
+            <div class="form-group">
+                <label>Audio Url</label> <input type="text" name="Audio" /><br />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit" />
+            </div>
+        </form>
+        </div>
+    </div>
+
+
 
