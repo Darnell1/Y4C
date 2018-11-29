@@ -6513,7 +6513,7 @@
       ]
     },
     "Microsoft.Extensions.Configuration/2.0.2": {
-      "sha512": "Pq3lwQQ2zB/meGk7D0kf2n6i/N/+/+0OwgyovGzfEAhsM7XWf24dP7Q2PmAJPKOXhQA++gzvQqYUhA19JuwW8g==",
+      "sha512": "n5HeFXiEFONntcwVFvEGY5dnB8VRqGD20RrdB9omX6dAAUSIV/sGwGhaLV5neOt/uvhc64VDmKjIjdffC6TX5A==",
       "type": "package",
       "path": "microsoft.extensions.configuration/2.0.2",
       "files": [
@@ -6581,7 +6581,7 @@
       ]
     },
     "Microsoft.Extensions.Configuration.FileExtensions/2.0.2": {
-      "sha512": "KaMJOx3SKUGlAijiP4zNgC74gS+pYijD1z1sVTqd4NpA12RDlLkXbOHC9h4L0NO72J8qQw595SDpd+dQ2lusyQ==",
+      "sha512": "Axc13qp2kYf6VUmUBCMmRCGIc1CmWC5xQ33MD9D8nB9hYZrbjh6IqNj10fHDG1UE+4L24H8fSeYJCMyGfa+VZg==",
       "type": "package",
       "path": "microsoft.extensions.configuration.fileextensions/2.0.2",
       "files": [
@@ -6604,7 +6604,7 @@
       ]
     },
     "Microsoft.Extensions.Configuration.Json/2.0.2": {
-      "sha512": "rSxkoyL5tSWrJ9ka2Pf+1FlgsnjcBIQu+x+EMQUrTdGbQXi4Tso7oKfAdnW63GKvzSkABZqWKe2epMS+TSMlaQ==",
+      "sha512": "dbx6tQ0uWc/8GoH2HJUaRtPG0X8puyeZIbXatu4I0b+xV23oFv7FdegPRlYrwnuyinqhAD3G2uR1YtJG0BgiNg==",
       "type": "package",
       "path": "microsoft.extensions.configuration.json/2.0.2",
       "files": [
@@ -13134,27 +13134,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Erin - Darnell\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
+    "C:\\Users\\neisha\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Erin - Darnell\\source\\repos\\Y4C\\Y4C\\Y4C.csproj",
+      "projectUniqueName": "C:\\Users\\neisha\\Source\\Repos\\Y4C\\Y4C\\Y4C\\Y4C.csproj",
       "projectName": "Y4C",
-      "projectPath": "C:\\Users\\Erin - Darnell\\source\\repos\\Y4C\\Y4C\\Y4C.csproj",
-      "packagesPath": "C:\\Users\\Erin - Darnell\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Erin - Darnell\\source\\repos\\Y4C\\Y4C\\obj\\",
+      "projectPath": "C:\\Users\\neisha\\Source\\Repos\\Y4C\\Y4C\\Y4C\\Y4C.csproj",
+      "packagesPath": "C:\\Users\\neisha\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\neisha\\Source\\Repos\\Y4C\\Y4C\\Y4C\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Erin - Darnell\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
+        "C:\\Users\\neisha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
