@@ -9,7 +9,12 @@
     <form asp-controller="Home" asp-action="AddContent" asp-method="Post">
         <label>Title</label> <input type="text" name="Title" /><br />
         <label>Video</label> <input type="text" name="Video" /><br />
-        <label>Description</label> <input type="text" name="Description" /><br />
+        <label>Description</label> <input type="text" name="Description" /><br /><br />
+
+        <h2>Upload Blog</h2>
+        <label>Title</label><br /><input type="text"  name="BlogTitle" /><br />
+        <label>Author</label><br /><input type="text" name="BlogAuthor" /><br />
+        <label>Content</label><br /><textarea rows="25" cols="75" name="BlogContent"></textarea><br />
         <input type="submit" value="Submit" />
     </form>
 </body>
