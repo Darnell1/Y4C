@@ -16,6 +16,11 @@ namespace Y4C.Controllers
             DBcontext = context;
         }
 
+        public ActionResult HomePage()
+        {
+            return View();
+        }
+
         public ActionResult AddContent()
         {
             return View();

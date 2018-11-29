@@ -31,6 +31,8 @@ namespace Y4C.Migrations
 
                     b.Property<string>("Video");
 
+                    b.Property<string>("Audio");
+
                     b.HasKey("Id");
 
                     b.ToTable("AC");

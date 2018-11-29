@@ -14,7 +14,8 @@ namespace Y4C.Migrations
                 {
                     Title = table.Column<string>(nullable: false),
                     Description = table.Column<string>(nullable: true),
-                    Video = table.Column<string>(nullable: true)
+                    Video = table.Column<string>(nullable: true),
+                    Audio = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
