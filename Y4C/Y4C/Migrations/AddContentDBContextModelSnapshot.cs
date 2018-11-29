@@ -25,6 +25,12 @@ namespace Y4C.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
+                    b.Property<string>("BlogAuthor");
+
+                    b.Property<string>("BlogContent");
+
+                    b.Property<string>("BlogTitle");
+
                     b.Property<string>("Description");
 
                     b.Property<string>("Title");
