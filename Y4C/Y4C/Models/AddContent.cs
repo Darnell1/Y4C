@@ -1,3 +1,4 @@
+
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,5 +15,9 @@ namespace Y4C.Models
         public string Video { get; set; }
         public string Audio { get; set; }
         public string Description { get; set; }
+        public string BlogContent { get; set; }
+        public string BlogTitle { get; set; }
+        public string BlogAuthor { get; set; }
+        
     }
 }

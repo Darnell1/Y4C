@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -17,6 +17,11 @@ namespace Y4C.Controllers
         }
 
         public ActionResult HomePage()
+        {
+            return View();
+        }
+
+        public ActionResult ThankYou()
         {
             return View();
         }

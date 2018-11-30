@@ -43,7 +43,7 @@ namespace Y4C
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=AddContent}/{id?}");
+                    template: "{controller=Home}/{action=HomePage}/{id?}");
             });
         }
     }
