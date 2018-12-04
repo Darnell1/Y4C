@@ -11,9 +11,10 @@ using Y4C.Models;
 namespace Y4C.Migrations
 {
     [DbContext(typeof(AddContentDBContext))]
-    partial class AddContentDBContextModelSnapshot : ModelSnapshot
+    [Migration("20181204164828_Third")]
+    partial class Third
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

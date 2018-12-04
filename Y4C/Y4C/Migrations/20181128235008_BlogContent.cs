@@ -22,10 +22,7 @@ namespace Y4C.Migrations
                 name: "BlogTitle",
                 table: "AC",
                 nullable: true);
-        }
 
-        protected override void Down(MigrationBuilder migrationBuilder)
-        {
             migrationBuilder.DropColumn(
                 name: "BlogAuthor",
                 table: "AC");
@@ -37,6 +34,11 @@ namespace Y4C.Migrations
             migrationBuilder.DropColumn(
                 name: "BlogTitle",
                 table: "AC");
+        }
+
+        protected override void Down(MigrationBuilder migrationBuilder)
+        {
+           
         }
     }
 }

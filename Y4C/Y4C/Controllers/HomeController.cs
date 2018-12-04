@@ -34,10 +34,10 @@ namespace Y4C.Controllers
             {
                 throw new Exception();
             }
-            return RedirectToAction(nameof(PlayVideo), new { id = add.Id });
+           return  RedirectToAction(nameof(PlayVideo), new { id = add.Id });
+            //return View("ThankYou");
         }
 
-        //public ViewResult PlayVideo() => View();
 
         public ActionResult PlayVideo(int id)
         {
