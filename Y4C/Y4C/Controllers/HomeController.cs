@@ -50,6 +50,10 @@ namespace Y4C.Controllers
             return View(viewName: nameof(PlayVideo), model: video);
         }
 
-
+        public ActionResult Survey()
+        {
+            ViewBag.Title = "Survey";
+            return View();
+        }
     }
 }
