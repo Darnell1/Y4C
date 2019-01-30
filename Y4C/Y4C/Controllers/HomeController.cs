@@ -15,7 +15,11 @@ namespace Y4C.Controllers
         {
             DBcontext = context;
         }
-
+        
+        public ActionResult HomePage()
+        {
+            return View(DBcontext.AC.ToList());
+        } 
         public ActionResult AddContent()
         {
             return View();
@@ -34,9 +38,35 @@ namespace Y4C.Controllers
             {
                 throw new Exception();
             }
-            return RedirectToAction(nameof(PlayVideo), new { id = add.Id });
+            return RedirectToAction(nameof(ThankYou), new { id = add.Id });
+        }
+        public ActionResult ManageContent()
+        {
+            return View(DBcontext.AC.ToList());
+        }
+        public ActionResult ThankYou()
+        {
+            return View();
         }
 
+        public ActionResult ContentDetails(int id=0)
+        {
+            return View(DBcontext.AC.Find(id));
+        }
+
+        public ActionResult DeleteContent(int id=0)
+        {
+            return View(DBcontext.AC.Find(id));
+        }
+
+        [HttpPost, ActionName("DeleteContent")]
+        public ActionResult DeleteConfirm(int id)
+        {
+            AddContent post = DBcontext.AC.Find(id);
+            DBcontext.AC.Remove(post);
+            DBcontext.SaveChanges();
+            return RedirectToAction("ManageContent");
+        }
         //public ViewResult PlayVideo() => View();
 
         public ActionResult PlayVideo(int id)
