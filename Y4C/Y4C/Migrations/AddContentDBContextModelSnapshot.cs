@@ -25,6 +25,8 @@ namespace Y4C.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
+                    b.Property<string>("ArchiveStatus");
+
                     b.Property<string>("Audio");
 
                     b.Property<string>("BlogAuthor");

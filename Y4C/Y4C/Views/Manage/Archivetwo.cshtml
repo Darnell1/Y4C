@@ -1,0 +1,45 @@
+﻿@model Y4C.Models.AddContent
+
+@{
+    ViewData["Title"] = "Archive";
+}
+
+<h2>Archive</h2>
+
+<h3>Are you sure you want to Archive this?</h3>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Archive">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+
+            <div class="form-group">
+                <label asp-for="BlogTitle" class="control-label"></label>
+                <select class="form-control">
+                    <option value="Active">Active</option>
+                    <option value="Inactive">Inactive</option>
+                </select>
+                <span asp-validation-for="BlogTitle" class="text-danger"></span>
+            </div>
+            <!--
+    <div class="form-group">
+        <label for="StatusSelection">Archive Status</label>
+        <select class="form-control" id="StatusSelection">
+            <option value="Active">Active</option>
+            <option value="Inactive">Inactive</option>
+        </select>
+    </div>
+    -->
+
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="ManageContent">Back to List</a>
+</div>
+

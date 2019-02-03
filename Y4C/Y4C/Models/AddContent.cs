@@ -16,6 +16,7 @@ namespace Y4C.Models
         public string Audio { get; set; }
         [DataType(DataType.Html)]
         public string BlogContent { get; set; }
+        public string ArchiveStatus { get; set; }
         public string BlogTitle { get; set; }
         public string BlogAuthor { get; set; }
         

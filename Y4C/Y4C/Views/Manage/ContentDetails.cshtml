@@ -14,7 +14,13 @@
 
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.Title) 
+            @Html.DisplayNameFor(model => model.ArchiveStatus)
+        </dt>
+        <dd>
+            @Model.ArchiveStatus
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
         </dt>
         <dd>
             @Html.DisplayFor(model => model.Title)
@@ -34,7 +40,7 @@
         </dt>
         <dd>
             @Html.DisplayFor(model => model.Description)
-            
+
         </dd>
         <dt>
             @Html.DisplayNameFor(model => model.Audio)
@@ -53,7 +59,7 @@
         <dd>
             @Html.DisplayFor(model => model.BlogContent)
         </dd>
-        
+
     </dl>
 </div>
 <div>
