@@ -1,0 +1,27 @@
+﻿@model Y4C.Models.AddContent 
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Y4C</title>
+</head>
+<body>
+
+    <p>@Model.Title</p><br />
+
+    <iframe width="560"
+            height="315"
+            src="@Model.Video"
+            frameborder="0"
+            allowfullscreen></iframe><br />
+
+    <p>@Model.Description</p>
+
+    <hr />
+    <h2>Blog</h2>
+    <h3>@Model.BlogTitle</h3>
+    <h5>@Model.BlogAuthor</h5>
+    <p>@Model.BlogContent</p>
+</body>
+</html>
+

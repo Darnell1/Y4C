@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.DependencyInjection;
 using Y4C.Models;
 
 namespace Y4C.Controllers
@@ -16,10 +18,30 @@ namespace Y4C.Controllers
             DBcontext = context;
         }
 
+        public ActionResult StudentDashboard()
+        {
+            return View();
+        }
+
         public ActionResult HomePage()
         {
             return View();
         }
+
+      
+
+        public ActionResult LoginScreen()
+        {
+            return View();
+        }
+
+        public ActionResult Login()
+        {
+            return View();
+        }
+
+        
+        
 
         public ActionResult ThankYou()
         {
@@ -44,7 +66,8 @@ namespace Y4C.Controllers
             {
                 throw new Exception();
             }
-            return RedirectToAction(nameof(PlayVideo), new { id = add.Id });
+            return RedirectToAction(nameof(ThankYou));
+            //return RedirectToAction(nameof(PlayVideo), new { id = add.Id });
         }
 
         //public ViewResult PlayVideo() => View();

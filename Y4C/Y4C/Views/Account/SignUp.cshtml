@@ -1,0 +1,58 @@
+﻿@model Y4C.Models.Account
+
+@{
+    ViewData["Title"] = "SignUp";
+}
+
+<br />
+<h2>Sign Up Here</h2>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="SignUp">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="StudentFName" class="control-label">First Name</label>
+                <input asp-for="StudentFName" class="form-control" required/>
+                <span asp-validation-for="StudentFName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StudentLName" class="control-label">Last Name</label>
+                <input asp-for="StudentLName" class="form-control" required/>
+                <span asp-validation-for="StudentLName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StudentEmail" class="control-label">Email</label>
+                <input asp-for="StudentEmail" type="email" class="form-control" required/>
+                <span asp-validation-for="StudentEmail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StudentUser" class="control-label">Username (Example: John Smith - JS781997)</label>
+                <input asp-for="StudentUser" class="form-control" required/>
+                <span asp-validation-for="StudentUser" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StudentPwd" class="control-label">Password</label>
+                <input asp-for="StudentPwd" type="password" class="form-control" required/>
+                <span asp-validation-for="StudentPwd" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StudentDob" class="control-label">Date of Birth (Must be at least 14)</label>
+                <input asp-for="StudentDob" type="date" class="form-control" required/>
+                <span asp-validation-for="StudentDob" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StudentTakenYogaClass" class="control-label">Have You Taken A Yoga Class Before?</label><br>
+                <input asp-for="StudentTakenYogaClass" type="radio" value="Yes" /> Yes <br>
+                <input asp-for="StudentTakenYogaClass" type="radio" value="No" /> No <br>
+                <span asp-validation-for="StudentTakenYogaClass" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+   
+
+
