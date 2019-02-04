@@ -57,8 +57,22 @@ namespace Y4C.Controllers
             return RedirectToAction("ManageContent");
 
         }
-        
 
-        
+        public ActionResult Edit(int id = 0)
+        {
+            return View(DBcontext.AC.Find(id));
+        }
+
+        [HttpPost, ValidateAntiForgeryToken]
+        public ActionResult Edit(AddContent content)
+        {
+            DBcontext.Entry(content).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+            DBcontext.SaveChanges();
+            return RedirectToAction("ManageContent");
+
+        }
+
+
+
     }
 }
