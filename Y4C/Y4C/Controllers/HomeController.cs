@@ -55,5 +55,12 @@ namespace Y4C.Controllers
             ViewBag.Title = "Survey";
             return View();
         }
+
+        public ActionResult CreateSurvey()
+        {
+            return View();
+        }
     }
+
+
 }
