@@ -20,5 +20,8 @@ namespace Y4C.Models
 
         public AddContentDBContext(DbContextOptions<AddContentDBContext> options) : base(options) { }
         public DbSet<AddContent> AC { get; set; }
+            public DbSet<Survey> Survey { get; set; }
+        public DbSet<Questions> Questions { get; set; }
+        public DbSet<Answer> Answer { get; set; }
     }
 }

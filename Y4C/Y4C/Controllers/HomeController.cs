@@ -16,6 +16,10 @@ namespace Y4C.Controllers
             DBcontext = context;
         }
 
+        public ActionResult HomePage()
+        {
+            return View(DBcontext.AC.ToList());
+        }
         public ActionResult AddContent()
         {
             return View();
@@ -34,9 +38,13 @@ namespace Y4C.Controllers
             {
                 throw new Exception();
             }
-            return RedirectToAction(nameof(PlayVideo), new { id = add.Id });
+            return RedirectToAction(nameof(ThankYou), new { id = add.Id });
         }
 
+        public ActionResult ThankYou()
+        {
+            return View();
+        }
         //public ViewResult PlayVideo() => View();
 
         public ActionResult PlayVideo(int id)
@@ -61,6 +69,5 @@ namespace Y4C.Controllers
             return View();
         }
     }
-
 
 }

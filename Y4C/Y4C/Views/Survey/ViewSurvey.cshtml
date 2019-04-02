@@ -1,0 +1,20 @@
+﻿@model Y4C.Models.Questions
+
+@{
+    ViewData["Title"] = "ViewSurvey";
+}
+
+<h2>ViewSurvey</h2>
+
+<div>
+    <h4>Survey</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        Question: @Model.Question
+        Type: @Model.Type
+    </dl>
+</div>
+<div>
+   
+    <a asp-action="Index">Back to List</a>
+</div>
